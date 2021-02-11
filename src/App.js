@@ -28,18 +28,19 @@ function App() {
   const operate = (operation) => {
     if (operation) {
       const result = operation(+firstNumber, +secondNumber);
-      if (result !== undefined || result !== null) {
+      if (result !== undefined || null) {
         setResult(result);
       }
     }
   };
 
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <input
         type="number"
         name="firstNumber"
         id="firstNumber"
+        data-testid="firstNumber"
         value={firstNumber}
         onChange={updateFirstNumber}
       />
@@ -48,6 +49,7 @@ function App() {
         name="operation"
         id="operation"
         selected="add"
+        data-testid="operation"
         onChange={chooseOperation}
       >
         <option value="add">+</option>
@@ -60,11 +62,14 @@ function App() {
         type="number"
         name="secondNumber"
         id="secondNumber"
+        data-testid="secondNumber"
         value={secondNumber}
         onChange={updateSecondNumber}
       />
 
-      <button onClick={calculate}>=</button>
+      <button onClick={calculate} data-testid="equalSign">
+        =
+      </button>
 
       <Results result={result} />
     </div>

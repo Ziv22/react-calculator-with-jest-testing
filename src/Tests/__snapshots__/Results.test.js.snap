@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result component matches snapshot 1`] = `
+<div
+  className="result"
+  data-testid="result"
+>
+   
+  7
+   
+</div>
+`;

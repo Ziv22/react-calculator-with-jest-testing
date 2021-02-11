@@ -1,8 +1,6 @@
-const Results = (props) => {
+const Results = ({result}) => {
     return (
-      <span className="results">
-          {props.result}
-      </span>
+      <div className="result" data-testid="result"> {result} </div>
     );
   }
   
