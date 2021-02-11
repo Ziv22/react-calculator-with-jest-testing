@@ -9,6 +9,9 @@ test("Add two numbers", () => {
 test("Subtract two numbers", () => {
   expect(subtract(3, 2)).toBe(1);
 });
+test("Subtract two numbers", () => {
+  expect(subtract(5, 5)).toBe(0);
+});
 
 test("Multiply two numbers", () => {
   expect(multiply(3, 2)).toBe(6);

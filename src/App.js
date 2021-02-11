@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import Screen from "./components/Screen";
+import Results from "./components/Results";
 import calculator from "./scripts/calculator";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
   const operate = (operation) => {
     if (operation) {
       const result = operation(+firstNumber, +secondNumber);
-      if (result) {
+      if (result !== undefined || result !== null) {
         setResult(result);
       }
     }
@@ -66,7 +66,7 @@ function App() {
 
       <button onClick={calculate}>=</button>
 
-      <Screen result={result} />
+      <Results result={result} />
     </div>
   );
 }
