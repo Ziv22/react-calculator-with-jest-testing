@@ -35,43 +35,45 @@ function App() {
   };
 
   return (
-    <div className="App" data-testid="App">
-      <input
-        type="number"
-        name="firstNumber"
-        id="firstNumber"
-        data-testid="firstNumber"
-        value={firstNumber}
-        onChange={updateFirstNumber}
-      />
+    <div className="app" data-testid="App">
+      <div className="container">
+        <input
+          type="number"
+          name="firstNumber"
+          id="firstNumber"
+          data-testid="firstNumber"
+          value={firstNumber}
+          onChange={updateFirstNumber}
+        />
 
-      <select
-        name="operation"
-        id="operation"
-        selected="add"
-        data-testid="operation"
-        onChange={chooseOperation}
-      >
-        <option value="add">+</option>
-        <option value="subtract">-</option>
-        <option value="multiply">*</option>
-        <option value="divide">/</option>
-      </select>
+        <select
+          name="operation"
+          id="operation"
+          selected="add"
+          data-testid="operation"
+          onChange={chooseOperation}
+        >
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
 
-      <input
-        type="number"
-        name="secondNumber"
-        id="secondNumber"
-        data-testid="secondNumber"
-        value={secondNumber}
-        onChange={updateSecondNumber}
-      />
+        <input
+          type="number"
+          name="secondNumber"
+          id="secondNumber"
+          data-testid="secondNumber"
+          value={secondNumber}
+          onChange={updateSecondNumber}
+        />
 
-      <button onClick={calculate} data-testid="equalSign">
-        =
-      </button>
+        <button onClick={calculate} data-testid="equalSign">
+          =
+        </button>
 
-      <Results result={result} />
+        <Results result={result} />
+      </div>
     </div>
   );
 }
