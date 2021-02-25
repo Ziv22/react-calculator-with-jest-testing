@@ -2,66 +2,70 @@
 
 exports[`App component matches snapshot 1`] = `
 <div
-  className="App"
+  className="app"
   data-testid="App"
 >
-  <input
-    data-testid="firstNumber"
-    id="firstNumber"
-    name="firstNumber"
-    onChange={[Function]}
-    type="number"
-    value=""
-  />
-  <select
-    data-testid="operation"
-    id="operation"
-    name="operation"
-    onChange={[Function]}
-    selected="add"
-  >
-    <option
-      value="add"
-    >
-      +
-    </option>
-    <option
-      value="subtract"
-    >
-      -
-    </option>
-    <option
-      value="multiply"
-    >
-      *
-    </option>
-    <option
-      value="divide"
-    >
-      /
-    </option>
-  </select>
-  <input
-    data-testid="secondNumber"
-    id="secondNumber"
-    name="secondNumber"
-    onChange={[Function]}
-    type="number"
-    value=""
-  />
-  <button
-    data-testid="equalSign"
-    onClick={[Function]}
-  >
-    =
-  </button>
   <div
-    className="result"
-    data-testid="result"
+    className="container"
   >
-     
-    0
-     
+    <input
+      data-testid="firstNumber"
+      id="firstNumber"
+      name="firstNumber"
+      onChange={[Function]}
+      type="number"
+      value=""
+    />
+    <select
+      data-testid="operation"
+      id="operation"
+      name="operation"
+      onChange={[Function]}
+      selected="add"
+    >
+      <option
+        value="add"
+      >
+        +
+      </option>
+      <option
+        value="subtract"
+      >
+        -
+      </option>
+      <option
+        value="multiply"
+      >
+        *
+      </option>
+      <option
+        value="divide"
+      >
+        /
+      </option>
+    </select>
+    <input
+      data-testid="secondNumber"
+      id="secondNumber"
+      name="secondNumber"
+      onChange={[Function]}
+      type="number"
+      value=""
+    />
+    <button
+      data-testid="equalSign"
+      onClick={[Function]}
+    >
+      =
+    </button>
+    <div
+      className="result"
+      data-testid="result"
+    >
+       
+      0
+       
+    </div>
   </div>
 </div>
 `;

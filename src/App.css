@@ -40,8 +40,8 @@ input {
   width: 20rem;
   height: 5rem;
   border: none;
-  border-bottom: 2px solid var(--text-color);
-  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color-focus);
+  color: var(--text-color-focus);
 }
 
 input:focus {
